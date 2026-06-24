@@ -3,7 +3,7 @@
 // NB: These likely will be removed in the future.
 
 import 'package:fuego_defi_sdk/src/_internal_exports.dart';
-import 'package:fuego_defi_sdk/src/komodo_defi_sdk.dart';
+import 'package:fuego_defi_sdk/src/fuego_defi_sdk.dart';
 import 'package:fuego_defi_types/fuego_defi_types.dart';
 import 'package:mutex/mutex.dart';
 

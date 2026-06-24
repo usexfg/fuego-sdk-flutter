@@ -1,4 +1,4 @@
-import 'package:fuego_defi_sdk/src/komodo_defi_sdk.dart';
+import 'package:fuego_defi_sdk/src/fuego_defi_sdk.dart';
 import 'package:fuego_defi_types/fuego_defi_types.dart';
 
 extension AssetHdWalletAddressesExtension on Asset {

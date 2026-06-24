@@ -2,7 +2,7 @@ import 'package:fuego_cex_market_data/src/binance/_binance_index.dart';
 import 'package:fuego_cex_market_data/src/cex_repository.dart';
 import 'package:fuego_cex_market_data/src/coingecko/_coingecko_index.dart';
 import 'package:fuego_cex_market_data/src/coinpaprika/_coinpaprika_index.dart';
-import 'package:fuego_cex_market_data/src/komodo/_komodo_index.dart';
+import 'package:fuego_cex_market_data/src/fuego/_komodo_index.dart';
 
 /// Utility class for managing repository priorities using a map-based approach.
 ///

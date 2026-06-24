@@ -8,7 +8,7 @@ import 'package:flutter/foundation.dart';
 import 'package:http/http.dart';
 import 'package:fuego_defi_framework/src/config/kdf_config.dart';
 import 'package:fuego_defi_framework/src/config/kdf_logging_config.dart';
-import 'package:fuego_defi_framework/src/native/komodo_defi_framework_bindings_generated.dart';
+import 'package:fuego_defi_framework/src/native/fuego_defi_framework_bindings_generated.dart';
 import 'package:fuego_defi_framework/src/operations/kdf_operations_interface.dart';
 import 'package:fuego_defi_framework/src/operations/kdf_operations_local_executable.dart';
 import 'package:fuego_defi_types/fuego_defi_type_utils.dart';

@@ -8,5 +8,5 @@ export 'bootstrap/_bootstrap_index.dart';
 export 'coingecko/_coingecko_index.dart';
 export 'coinpaprika/_coinpaprika_index.dart';
 export 'common/_common_index.dart';
-export 'komodo/_komodo_index.dart';
+export 'fuego/_komodo_index.dart';
 export 'models/_models_index.dart';
