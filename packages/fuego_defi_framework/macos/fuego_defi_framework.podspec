@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name             = 'komodo_defi_framework'
+  s.name             = 'fuego_defi_framework'
   s.version          = '0.0.1'
   s.summary          = 'A new Flutter FFI plugin project.'
   s.description      = <<-DESC
