@@ -1,6 +1,6 @@
 # Dragon Charts Flutter
 
-Lightweight, declarative, and customizable charting library for Flutter with minimal dependencies. This package now lives in the Komodo DeFi SDK monorepo.
+Lightweight, declarative, and customizable charting library for Flutter with minimal dependencies. This package now lives in the Fuego DeFi SDK monorepo.
 
 ## Features
 

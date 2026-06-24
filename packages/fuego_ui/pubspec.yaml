@@ -1,0 +1,28 @@
+name: fuego_ui
+description: A high-level widget catalog relevant to building Flutter UI apps
+  which consume Fuego DeFi Framework
+version: 0.3.2
+repository: https://github.com/usexfg/fuego-defi-sdk-flutter
+
+environment:
+  sdk: ">=3.9.0 <4.0.0"
+  flutter: ">=3.35.0"
+
+resolution: workspace
+
+dependencies:
+  decimal: ^3.2.1
+
+  flutter:
+    sdk: flutter
+
+  intl: ^0.20.2
+  fuego_defi_types: ^0.4.1
+  mobile_scanner: ^7.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  index_generator: ^4.0.1
+  mocktail: ^1.0.4
+  very_good_analysis: ^9.0.0

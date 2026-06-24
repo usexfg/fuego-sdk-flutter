@@ -6,7 +6,7 @@
 
 A lightweight, high-throughput cross-platform logging framework for Flutter with persisted log storage.
 
-Maintained by [GLEEC](https://www.gleec.com).
+Maintained by [GLEEC](https://www.usexfg.org).
 
 ## Overview
 
@@ -179,4 +179,4 @@ This project is licensed under the MIT License. See the [LICENSE](link_to_licens
 
 ---
 
-Made with ❤️ by [GLEEC](https://www.gleec.com)
+Made with ❤️ by [GLEEC](https://www.usexfg.org)

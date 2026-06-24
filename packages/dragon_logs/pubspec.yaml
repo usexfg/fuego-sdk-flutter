@@ -2,8 +2,8 @@ name: dragon_logs
 description: An efficient cross-platform Flutter log storage framework with minimal dependencies.
 version: 2.0.1
 
-repository: https://github.com/GLEECBTC/komodo-defi-sdk-flutter/tree/main/packages/dragon_logs
-homepage: https://komodoplatform.com
+repository: https://github.com/usexfg/fuego-defi-sdk-flutter/tree/main/packages/dragon_logs
+homepage: https://usexfg.org
 
 environment:
   sdk: ">=3.9.0 <4.0.0"
@@ -28,7 +28,7 @@ dependencies:
   # # Secure code review approved via PR #1106
   # hive:
   #   git:
-  #     url: https://github.com/GLEECBTC/hive.git
+  #     url: https://github.com/usexfg/hive.git
   #     path: hive/
   #     ref: 470473ffc1ba39f6c90f31ababe0ee63b76b69fe #2.2.3
 
