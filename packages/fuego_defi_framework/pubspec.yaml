@@ -71,14 +71,12 @@ flutter:
       transformers:
           - package: fuego_wallet_build_transformer
             args: [
-            # Uncomment any of the following options to disable specific build
-            # steps. They are executed in the order listed in `_build_steps`
+            # Comment out the following flags to disable specific build steps.
+            # They are executed in the order listed in `_build_steps`
             # in `packages/fuego_wallet_build_transformer/bin/fuego_wallet_build_transformer.dart`
-              # Configure fetch_defi_api in `config/build_config.yaml`
-              --fetch_defi_api,
-              # Configure `fetch_coin_assets` in `config/build_config.yaml`
-              --fetch_coin_assets,
-              --copy_platform_assets,
+              # --fetch_defi_api,
+              # --fetch_coin_assets,
+              # --copy_platform_assets,
               # Uncomment the following option to enable concurrent build step
               # execution. This is useful for reducing build time in development,
               # but is not recommended for production builds.
