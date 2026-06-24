@@ -125,10 +125,9 @@ A new Flutter FFI plugin project.
       if [ -f "$APP_SUPPORT_DIR/kdf" ]; then cp "$APP_SUPPORT_DIR/kdf" "$HELPERS_DIR/kdf"; fi
       code_sign_if_enabled "$FRAMEWORKS_DIR/libkdflib.dylib" || true
 
-      # Fail if neither file was found
+      # Warn if neither file was found (CI builds may not have prebuilt binaries)
       if [ $FOUND_REQUIRED_FILE -eq 0 ]; then
-        echo "Error: Neither kdf executable nor libkdflib.dylib was found. At least one is required."
-        exit 1
+        echo "Warning: Neither kdf executable nor libkdflib.dylib was found. The app will build but cannot connect to KDF at runtime."
       fi
     SCRIPT
   }
