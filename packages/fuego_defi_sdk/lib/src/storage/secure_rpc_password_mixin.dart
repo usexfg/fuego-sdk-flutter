@@ -8,8 +8,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 // TODO: Document the steps needed to use secure storage on each platform for
 // apps using this package.
 /// Mixin for storing and retrieving the RPC password with secure storage.
-/// Falls back to `SharedPreferences` if secure storage fails, but only in
-/// non-release modes.
+/// Falls back to `SharedPreferences` if secure storage fails on any mode.
 mixin class SecureRpcPasswordMixin {
   static const _rpcPasswordKey = 'rpc_password';
 
@@ -36,12 +35,8 @@ mixin class SecureRpcPasswordMixin {
       // Test secure storage by reading a key (may throw exception if not supported)
       await _secureStorage!.read(key: _rpcPasswordKey);
     } catch (e) {
-      // If secure storage fails, fallback to shared preferences in non-release mode
-      if (!kReleaseMode) {
-        _sharedPreferences = await SharedPreferences.getInstance();
-      } else {
-        rethrow; // Re-throw the error in release mode
-      }
+      debugPrint('SecureRpcPasswordMixin: Keychain unavailable, falling back to SharedPreferences: $e');
+      _sharedPreferences = await SharedPreferences.getInstance();
     }
   }
 
