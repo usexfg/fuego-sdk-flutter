@@ -3,5 +3,5 @@
 /// Internal/private classes related to Komodo-specific market data functionality.
 library _komodo;
 
-export 'prices/komodo_price_provider.dart';
-export 'prices/komodo_price_repository.dart';
+export 'prices/fuego_price_provider.dart';
+export 'prices/fuego_price_repository.dart';

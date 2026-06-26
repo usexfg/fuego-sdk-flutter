@@ -1,6 +1,6 @@
 import 'package:decimal/decimal.dart';
 import 'package:fuego_cex_market_data/src/cex_repository.dart';
-import 'package:fuego_cex_market_data/src/komodo/prices/komodo_price_provider.dart';
+import 'package:fuego_cex_market_data/src/fuego/prices/fuego_price_provider.dart';
 import 'package:fuego_cex_market_data/src/models/_models_index.dart';
 import 'package:fuego_cex_market_data/src/repository_selection_strategy.dart';
 import 'package:fuego_defi_types/fuego_defi_types.dart';

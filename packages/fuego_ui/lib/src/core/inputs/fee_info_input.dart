@@ -7,7 +7,7 @@ typedef FeeInfoChanged = void Function(FeeInfo? fee);
 
 /// Constants for fee calculations
 const _gweiInEth = 1000000000; // 10^9
-const _defaultUtxoDecimals = 8;
+const _defaultUtxoDecimals = 7;
 
 /// A widget for inputting custom fee information.
 ///
