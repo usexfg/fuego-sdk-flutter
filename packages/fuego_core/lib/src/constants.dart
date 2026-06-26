@@ -25,16 +25,16 @@ const int minTxFee = 8000;
 const int dust = 1000;
 
 /// Confirmations before a transaction is considered mature.
-const int matureConfirmations = 60;
+const int matureConfirmations = 30;
 
 /// Required confirmations for most operations.
-const int requiredConfirmations = 4;
+const int requiredConfirmations = 5;
 
 /// Default RPC port for fuegod.
 const int defaultRpcPort = 18180;
 
 /// Default P2P port.
-const int defaultP2pPort = 18181;
+const int defaultP2pPort = 10808;
 
 /// Atomic units per XFG (7 decimal places).
 const int atomicPerCoin = 10000000;
@@ -60,28 +60,28 @@ const String addressPrefix = 'fire';
 /// BIP44 coin type index for Fuego.
 const int coinType = 9797;
 
-/// Network ID for mainnet.
+/// Network ID for mainnet.??
 const int networkId = 6133;
 
 /// Message signing prefix.
 const String signMessagePrefix = 'Fuego Signed Message:\n';
 
 /// Trezor coin name.
-const String trezorCoin = 'Fuego';
+const String trezorCoin = 'XFG Fuego';
 
 // --- Emission / Treasury ---
 
 /// Maximum supply in XFG.
-const double maxSupply = 21000000;
+const double maxSupply = 8000008.8000008;
 
 /// Developer fund percentage (0.1% of every transaction).
-const double devFee = 0.001;
+const double devFee = 0.0;
 
 /// Protocol-level fee for swaps (2% of every swap).
 const double swapFee = 0.02;
 
 /// HEAT burn ratio — how many HEAT tokens per 1 XFG burned.
-const int heatBurnRatio = 10000;
+const int heatBurnRatio = 0.1;
 
 // --- CD Constants ---
 
@@ -97,7 +97,7 @@ const List<double> cdApyRates = [4.2, 5.8, 7.1, 8.5];
 /// CD interest rate (2% base).
 const double cdInterestRate = 0.02;
 
-/// Fee to developer fund on CD creation.
+/// Fee to developer fund on CD creation. 0.1%
 const double cdDevFee = 0.001;
 
 // --- Mining ---
@@ -106,7 +106,7 @@ const double cdDevFee = 0.001;
 const int defaultMiningThreads = 1;
 
 /// Mining reward per block (placeholder — check emission schedule).
-const double miningReward = 0;
+const double miningReward = 0.3;
 
 /// Convert atomic units to XFG.
 double fromAtomic(int atomic) => atomic / atomicPerCoin;
