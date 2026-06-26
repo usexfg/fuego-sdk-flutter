@@ -93,13 +93,21 @@ class FuegoDaemonClient {
   // ---- Mining ----
 
   Future<void> startMining({int threads = 1, String? address}) async {
-    await _call('start_mining', {
-      'threads_count': threads,
-      if (address != null) 'miner_address': address,
-    });
+    try {
+      await _call('start_mining', {
+        'threads_count': threads,
+        if (address != null) 'miner_address': address,
+      });
+    } catch (_) {
+      // Mining not available on mainnet
+    }
   }
 
-  Future<void> stopMining() async => await _call('stop_mining');
+  Future<void> stopMining() async {
+    try {
+      await _call('stop_mining');
+    } catch (_) {}
+  }
 
   Future<Map<String, dynamic>> getMiningStatus() async =>
       await _call('mining_status');
