@@ -81,7 +81,7 @@ const double devFee = 0.0;
 const double swapFee = 0.02;
 
 /// HEAT burn ratio — how many HEAT tokens per 1 XFG burned.
-const int heatBurnRatio = 0.1;
+const double heatBurnRatio = 0.1;
 
 // --- CD Constants ---
 
